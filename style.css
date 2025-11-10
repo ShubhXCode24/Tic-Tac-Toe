@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(203, 245, 245);
+    text-align: center;
+}
+
+#heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.323);
+    user-select: none; 
+}
+
+.container {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    font-size: 8vmin;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    background-color:white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+#msg {
+    font-size: 4vmin;
+    letter-spacing: 10px;
+}
+
+.msg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vmin;
+    background-color: rgb(205, 247, 247);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+
+}
+
+.hide {
+    display: none;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* space between buttons */
+}
+
+#reset {
+    font-family: 'Orbitron', sans-serif;
+    padding: 1rem;
+    font-size: 1.23rem;
+    background: #26261ec5;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    border-radius: 1rem;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#reset:hover{
+    transform: scale(1.00) translateY(-15px) translateX(10px);
+}
+
+#new-btn {
+    font-family: 'Orbitron', sans-serif;
+    padding: 1rem;
+    font-size: 1.23rem;
+    background: #26261ec5;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+    border-radius: 1rem;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#new-btn:hover{
+    transform: scale(1.00) translateY(-15px) translateX(-10px);
+}
+
+
+.scoreboard {
+    font-family: "'Orbitron', sans-serif";
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#turn {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
